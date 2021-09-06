@@ -41,7 +41,11 @@ def main():
     
     predictions = prediction(model, features, X)
     
-    print(predictions)
+    output_file = open("predictions/output.txt", "wb")
+
+    output_file.write(predictions)
+
+    output_file.close()
 
 if __name__ == "__main__":
     main()

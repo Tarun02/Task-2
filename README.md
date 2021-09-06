@@ -34,7 +34,7 @@ This file will be copied to the container to get the predictions.
 
 Once the container has been build and run we can get the output of the predictions by running the same command:
 
-> docker cp \`docker ps -alq\` /output .
+> docker cp \`docker ps -alq\` /predictions .
 
 
 # Different models
