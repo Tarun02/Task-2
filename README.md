@@ -22,7 +22,7 @@ Then you can train the model by running the container with the following command
 
 Now to get the .pkl file from the container you have to run the following command:
 
-> docker cp \`docker ps -alq\` /output .
+> docker cp \`docker ps -alq\`:/output .
 
 The **docker ps -alq** will give you the container id of the latest run.
 
@@ -32,9 +32,11 @@ The process is same as of building the training container but one main differenc
 
 This file will be copied to the container to get the predictions. 
 
+Moreover, there is also artifacts folder which consists of the .pkl files needed to load the model and use it for predictions.
+
 Once the container has been build and run we can get the output of the predictions by running the same command:
 
-> docker cp \`docker ps -alq\` /predictions .
+> docker cp \`docker ps -alq\`:/predictions .
 
 
 # Different models
