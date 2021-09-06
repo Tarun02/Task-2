@@ -41,5 +41,5 @@ Once the container has been build and run we can get the output of the predictio
 
 # Different models
 
-To build different model you can change the training script in the container but please make sure that you cannot change the name of the files.
+To build different model you can change the training script in the container but please make sure that you cannot change the name of the files. In the same way you can change the inference script and based on your framework you need to change the artifacts folder.
 
